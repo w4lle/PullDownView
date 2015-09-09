@@ -1,7 +1,5 @@
 package com.w4lle.pulldownview;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -19,7 +17,6 @@ import android.widget.ScrollView;
  * Created by w4lle on 15-9-9.
  * Copyright (c) 2015 Boohee, Inc. All rights reserved.
  */
-
 
 public class PullDownView extends ScrollView {
 
@@ -154,18 +151,6 @@ public class PullDownView extends ScrollView {
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
                 layoutParams.topMargin = (int) valueAnimator.getAnimatedValue();
                 containerView.setLayoutParams(layoutParams);
-            }
-        });
-        valueAnimator.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-                post(new Runnable() {
-                    @Override
-                    public void run() {
-//                        scrollTo(0, 0);
-                    }
-                });
             }
         });
         isShowTopView = true;
