@@ -1,0 +1,99 @@
+<com.w4lle.pulldownview.PullDownView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Item 1" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="click"
+                android:text="Item 2" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="click"
+                android:text="top Item 3" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="click"
+                android:text="Item 4" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="click"
+                android:text="Item 5" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Item 6" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="200dp"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="600dp">
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="container1" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="container2" />
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="container3" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="container4" />
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="container5" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.w4lle.pulldownview.PullDownView>
