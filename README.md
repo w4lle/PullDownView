@@ -1,5 +1,5 @@
 # PullDownView
---------
+
 ## 效果
 
   <img src="https://github.com/w4lle/PullDownView/blob/master/demo.gif">
@@ -10,14 +10,47 @@
 
   compile 'com.w4lle.library:pull-down-view:1.0.0'
 
-----------
+<com.w4lle.library.PullDownView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:scaleType="center"
+                android:background="@drawable/back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:layout_height="600dp">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.w4lle.library.PullDownView>
 
 
 
 
 ## 协议
-
-4.协议
 
 >  /*
  * Copyright (C) 2015 w4lle
