@@ -1,18 +1,19 @@
 # PullDownView
 
-## 效果
+## 1.效果
 
   <img src="https://github.com/w4lle/PullDownView/blob/master/demo.gif">
 
 
 --
-## 使用方法
+## 2.使用方法
 
-引用
+### 2.1引用
 
 >  compile 'com.w4lle.library:pull-down-view:1.0.0'
 
-```java
+### 2.2使用
+```
 <com.w4lle.library.PullDownView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -54,7 +55,7 @@
 
 
 
-## 协议
+## 3.协议
 
 >  /*
  * Copyright (C) 2015 w4lle
