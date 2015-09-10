@@ -2,8 +2,8 @@
 --------
 ## 效果
 
+  <img src="https://github.com/w4lle/PullDownView/blob/master/demo.gif">
 
-  [1]: https://github.com/w4lle/PullDownView/blob/master/demo.gif
 
 --
 ## 使用方法
