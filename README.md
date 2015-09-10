@@ -8,8 +8,11 @@
 --
 ## 使用方法
 
-  compile 'com.w4lle.library:pull-down-view:1.0.0'
+引用
 
+>  compile 'com.w4lle.library:pull-down-view:1.0.0'
+
+、、、
 <com.w4lle.library.PullDownView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -46,6 +49,7 @@
     </RelativeLayout>
 
 </com.w4lle.library.PullDownView>
+、、、
 
 
 
