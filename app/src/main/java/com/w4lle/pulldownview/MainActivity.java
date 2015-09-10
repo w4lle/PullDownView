@@ -2,11 +2,11 @@ package com.w4lle.pulldownview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     @Override
@@ -14,12 +14,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.text1).setOnClickListener(this);
-        findViewById(R.id.text2).setOnClickListener(this);
-        findViewById(R.id.text3).setOnClickListener(this);
-        findViewById(R.id.text4).setOnClickListener(this);
-        findViewById(R.id.text5).setOnClickListener(this);
-        findViewById(R.id.text6).setOnClickListener(this);
+        findViewById(R.id.image).setOnClickListener(this);
+
         findViewById(R.id.text7).setOnClickListener(this);
         findViewById(R.id.text8).setOnClickListener(this);
         findViewById(R.id.text9).setOnClickListener(this);
@@ -51,6 +47,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        Log.d("onClick", ((TextView) view).getText().toString());
+        if (view instanceof TextView) {
+            Toast.makeText(this, ((TextView) view).getText().toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (view.getId() == R.id.image) {
+            Toast.makeText(this, "image onClick" ,Toast.LENGTH_SHORT).show();
+        }
     }
 }

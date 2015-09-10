@@ -1,4 +1,4 @@
-package com.w4lle.pulldownview;
+package com.w4lle.library;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

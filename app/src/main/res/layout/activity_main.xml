@@ -1,4 +1,4 @@
-<com.w4lle.pulldownview.PullDownView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.w4lle.library.PullDownView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,53 +13,19 @@
             android:layout_height="300dp"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/text1"
+            <ImageView
+                android:id="@+id/image"
+                android:scaleType="center"
+                android:background="@drawable/back"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="Item 1" />
-
-            <TextView
-                android:id="@+id/text2"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:onClick="click"
-                android:text="Item 2" />
-
-            <TextView
-                android:id="@+id/text3"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:onClick="click"
-                android:text="top Item 3" />
-
-            <TextView
-                android:id="@+id/text4"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:onClick="click"
-                android:text="Item 4" />
-
-            <TextView
-                android:id="@+id/text5"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:onClick="click"
-                android:text="Item 5" />
-
-            <TextView
-                android:id="@+id/text6"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="Item 6" />
-
+                android:layout_height="match_parent" />
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_marginTop="200dp"
-            android:background="@android:color/holo_blue_dark"
             android:layout_width="match_parent"
+            android:background="@android:color/white"
             android:orientation="vertical"
             android:layout_height="600dp">
 
@@ -96,4 +62,4 @@
 
     </RelativeLayout>
 
-</com.w4lle.pulldownview.PullDownView>
+</com.w4lle.library.PullDownView>
