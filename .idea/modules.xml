@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PullDownView.iml" filepath="$PROJECT_DIR$/PullDownView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pull-down-view/pull-down-view.iml" filepath="$PROJECT_DIR$/pull-down-view/pull-down-view.iml" />
     </modules>
   </component>
 </project>
