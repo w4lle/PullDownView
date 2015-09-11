@@ -1,7 +1,7 @@
 # PullDownView
 
 
-  <img src="https://github.com/w4lle/PullDownView/blob/master/demo.gif">
+  <img src="https://github.com/w4lle/PullDownView/blob/master/pulldownLayout.gif">
 
 
 --
