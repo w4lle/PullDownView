@@ -38,7 +38,7 @@ install {
                 packaging 'aar'
 
                 // Add your description here
-                name 'pull-down-view'
+                name 'pull-down-layout'
                 description = 'An Android liabrary Pull Down show TopView'
                 url siteUrl
 
@@ -98,7 +98,7 @@ bintray {
     pkg {
         repo = "maven"
         // it is the name that appears in bintray when logged
-        name = "pull-down-view"
+        name = "pull-down-layout"
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
