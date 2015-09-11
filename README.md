@@ -70,11 +70,11 @@
 ```
 
 ## Custom
-
+```
 pull_down_height  下拉触发阀值  DEFAULT 50
 pull_up_height  上拉触发阀值  DEFAULT 50
 is_change_speed  底图上推滑动速度是否区别速度 DEFAULT false
-
+```
 
 ## ChangeLog
 
