@@ -9,7 +9,7 @@
 
 ### Gradle
 
->  compile 'com.w4lle.library:pull-down-layout:lastversion'
+>  compile 'com.w4lle.library:pull-down-layout:1.0.2'
 
 ### XML
 

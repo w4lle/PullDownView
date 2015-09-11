@@ -6,7 +6,6 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
@@ -195,7 +194,6 @@ public class PullDownView extends ScrollView {
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
         super.onScrollChanged(l, t, oldl, oldt);
         mCurrentOffset = t;//右边滑动标签相对于顶端的偏移量
-        Log.d(TAG, "t : " + t);
         if (t <= topViewHeight && t >= 0 && !isShowTopView && isChangeSpeed) {
             topView.setTranslationY(t / 2);//使得TopView滑动的速度小于滚轮滚动的速度
         }
