@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="pullDownLayout">
+        <attr name="is_change_speed" format="boolean"/>
+        <attr name="pull_down_height" format="dimension" />
+        <attr name="pull_up_height" format="dimension" />
+    </declare-styleable>
+</resources>

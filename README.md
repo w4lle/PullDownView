@@ -9,13 +9,18 @@
 
 ### Gradle
 
->  compile 'com.w4lle.library:pull-down-layout:1.0.0'
+>  compile 'com.w4lle.library:pull-down-layout:lastversion'
+
+### XML
 
 ```
 <com.w4lle.library.PullDownView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:is_change_speed="false"
+    app:pull_down_height="30dp"
+    app:pull_up_height="30dp"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -49,7 +54,33 @@
 
 </com.w4lle.library.PullDownView>
 ```
+### JAVA
+```
+ pullDownView.setOnPullChangeListerner(new PullDownView.OnPullChangeListerner() {
+            @Override
+            public void onPullDown() {
+                Toast.makeText(MainActivity.this, "onPullDown", Toast.LENGTH_SHORT).show();
+            }
 
+            @Override
+            public void onPullUp() {
+                Toast.makeText(MainActivity.this, "onPullUp", Toast.LENGTH_SHORT).show();
+            }
+        });
+```
+
+## Custom
+
+pull_down_height  下拉触发阀值  DEFAULT 50
+pull_up_height  上拉触发阀值  DEFAULT 50
+is_change_speed  底图上推滑动速度是否区别速度 DEFAULT false
+
+
+## ChangeLog
+
+v1.0.2 add styleable
+
+v1.0.1 add OnPullChangeListener
 
 
 

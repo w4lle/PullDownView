@@ -7,7 +7,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
         versionName "1.0.0"
@@ -28,7 +28,7 @@ dependencies {
 def siteUrl = 'https://github.com/w4lle/PullDownView'
 def gitUrl = 'git@github.com:w4lle/PullDownView.git'
 group = 'com.w4lle.library'
-version = '1.0.0'
+version = '1.0.2'
 
 install {
     repositories.mavenInstaller {

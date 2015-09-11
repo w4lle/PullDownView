@@ -8,7 +8,11 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.w4lle.library.PullDownView;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+    public static final String TAG = MainActivity.class.getSimpleName();
+    private PullDownView pullDownView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +25,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.text9).setOnClickListener(this);
         findViewById(R.id.text10).setOnClickListener(this);
         findViewById(R.id.text11).setOnClickListener(this);
+
+        pullDownView = (PullDownView) findViewById(R.id.layout_pull);
+        pullDownView.setOnPullChangeListerner(new PullDownView.OnPullChangeListerner() {
+            @Override
+            public void onPullDown() {
+                Toast.makeText(MainActivity.this, "onPullDown", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onPullUp() {
+                Toast.makeText(MainActivity.this, "onPullUp", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
